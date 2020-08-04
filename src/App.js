@@ -5,7 +5,7 @@ import MenuCart from "./containers/MenuCart";
 
 function App() {
   return (
-    <div class="containers">
+    <div className="containers">
       <div id="app-holder">
     <div >
       <MenuCart />

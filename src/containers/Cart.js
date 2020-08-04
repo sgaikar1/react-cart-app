@@ -1,22 +1,20 @@
 import React from "react";
+import CartItem from "../components/CartItem";
 
-function Cart({total}) {
+function Cart({total, menu, cart, reduceFromCart}) {
     return(
         <div id="cart">
         <h2 className="text-center">Cart</h2>
         <div id="cart-area">
-          {/* //like explained in the video you can separate out cart item into a different component as well
-          {Object.keys(cart).map((sku, index) => (
-            <div className="cart-item" key={index}>
-              <span className="item-text">
-                {menu[sku].productName} x {cart[sku]}
-              </span>
-              <span className="item-total">₹{menu[sku].price}</span>
-              <button className="remove-button" onClick={() => reduceCart(sku)}>
-                -
-              </button>
-            </div>
-          ))} */}
+          {Object.keys(cart).map((key, index) => (
+            <CartItem
+            productName={menu[key].productName}
+            price={menu[key].price}
+            reduceFromCart={reduceFromCart}
+            sku={key}
+            qty = {cart[key]}
+        />
+          ))}
           <div id="cart-total">
             <div className="cart-item">
               <span className="item-text">total</span>
