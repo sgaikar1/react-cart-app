@@ -13,6 +13,7 @@ function Menu({menu, addToCart}) {
                 addToCart={addToCart}
                 sku={key}
             />
+            
         ))}
         </div>
         </div>
