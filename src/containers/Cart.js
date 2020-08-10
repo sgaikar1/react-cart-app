@@ -6,7 +6,7 @@ function Cart({total, menu, cart, reduceFromCart}) {
         <div id="cart">
         <h2 className="text-center">Cart</h2>
         <div id="cart-area">
-          {Object.keys(cart).map((key, index) => (
+          {/* {Object.keys(cart).map((key, index) => (
             <CartItem
             productName={menu[key].productName}
             price={menu[key].price}
@@ -14,7 +14,7 @@ function Cart({total, menu, cart, reduceFromCart}) {
             sku={key}
             qty = {cart[key]}
         />
-          ))}
+          ))} */}
           <div id="cart-total">
             <div className="cart-item">
               <span className="item-text">total</span>

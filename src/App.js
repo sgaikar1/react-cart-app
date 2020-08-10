@@ -16,13 +16,8 @@ class App extends Component {
   return (
     <BrowserRouter>
       <div className="containers">
-        <Navbar />
-        <Route exact path="/" component={Home} />
-        <Route path="/About" component={About} />
-        <Route path="/Contact" component={Contact} />
-        <div>Age:<span>{this.props.age}</span></div>
-        <button onClick={this.props.onAgeUp}>Age Up</button>
-        <button onClick={this.props.onAgeDown}>Age Down</button>
+        <Navbar></Navbar>
+        
         <div id="app-holder">
           <div >
             <MenuCart />

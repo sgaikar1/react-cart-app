@@ -1,7 +1,7 @@
 /* utilities and global css */
 
 :root {
-    --bg-color: #beffc7;
+    --bg-color: #f2f2f2;
     --secondary-bg: #f2f2f2;
 
     --yellow: #f1e06a;
@@ -44,7 +44,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Rubik", sans-serif;
+    font-family: "Nunito Sans";
 }
 
 button {
@@ -71,7 +71,6 @@ button {
 
 #app-holder {
     display: flex;
-    justify-content: center;
     height: 100vh;
     flex-direction: column;
 }
@@ -86,26 +85,28 @@ button {
 
 #menu-cart h2 {
     font-size: var(--s3);
-    text-transform: lowercase;
     margin-bottom: var(--s1);
 }
 
 #menu {
     padding-left: var(--s1);
     padding-right: var(--s1);
-    border-right: 2px solid black;
-    width: 70%;
+    width: 100%;
 }
 
 .menu-item {
     background-color: #dcdcdc;
     padding: var(--s-1) var(--s1);
-    border-radius: var(--s-5);
+    border-radius: 5px;
     display: flex;
 }
 
 .menu-text {
-    padding: var(--s-2) 0;
+    padding: 8px 20px;
+    background-color: #67c8ee;
+    border-radius: 20px;
+    margin-right: 5px;
+    color: rgb(28, 41, 116);
 }
 
 .menu-action {
@@ -137,11 +138,17 @@ button {
     font-size: var(--s1);
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
+    width: 200px;
 }
 
 .cart-item {
     display: flex;
+    padding: 8px;
+    margin-top: 10px;
     position: relative;
+    background-color:#7cbaf5;
+    border: #acacac;
 }
 
 .cart-item .remove-button {

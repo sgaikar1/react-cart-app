@@ -1,14 +1,14 @@
 import React from "react";
 
-function CartItem({ productName, price, reduceFromCart, sku, qty}) {
+function CartItem({ product}) {
     return(
         <div className="cart-item">
               <span className="item-text">
-                {productName} x {qty}
+                {product.line1}
               </span>
-              <span className="item-total">₹{price}</span>
+              <span className="item-total">₹</span>
               <span class="menu-action">
-                <button className="remove-button" onClick={() => reduceFromCart(sku)}>
+                <button className="remove-button" >
                     -
                 </button>
               </span>
